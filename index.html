@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="UniBuddy — a community marketplace for buyers and sellers.">
+  <title>UniBuddy Marketplace</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">U</span> UniBuddy</a>
+<nav><a href="#market">Marketplace</a><a href="#how">How it works</a></nav>
+<div class="top-actions"><button class="ghost" id="messagesNav">Messages <span id="unreadCount"></span></button><button class="primary" id="accountBtn">Sign in</button></div></header>
+<main>
+<section class="hero"><div><span class="eyebrow">YOUR CAMPUS. YOUR COMMUNITY.</span><h1>Find it. Sell it.<br><em>Buddy up.</em></h1><p>A simple marketplace to discover useful finds, connect with people, and shop from your community.</p><div class="hero-actions"><a class="primary link-button" href="#market">Explore products</a><button class="secondary" id="sellHero">Start selling</button></div><div class="trust"><span>✓ Community marketplace</span><span>✓ Buyer–seller chat</span><span>✓ Clear 2% platform fee</span></div></div><div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-card"><span class="mini-label">TODAY'S FINDS</span><div class="hero-emoji">🛍️</div><strong>Good finds, good people.</strong><small>Shop from your community</small><div class="floating f1">📚 Textbooks</div><div class="floating f2">🎧 Tech & gadgets</div><div class="floating f3">👕 Pre-loved style</div></div></div></section>
+<section class="stats"><div><strong>Community</strong><span>Buy and sell locally</span></div><div><strong>Direct chat</strong><span>Ask before you buy</span></div><div><strong>2% only</strong><span>Marketplace commission</span></div></section>
+<section class="market section" id="market"><div class="section-head"><div><span class="eyebrow">THE MARKETPLACE</span><h2>Discover something good.</h2><p>Browse sample listings or search for what you need.</p></div><button class="primary" id="addProductBtn">＋ List a product</button></div>
+<div class="filters"><label class="search">⌕ <input id="searchInput" placeholder="Search products, categories, sellers..."></label><select id="categoryFilter"><option value="All">All categories</option><option>Books</option><option>Electronics</option><option>Fashion</option><option>School supplies</option><option>Home</option></select><select id="sortFilter"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+<div class="product-grid" id="productGrid"></div></section>
+<section class="how section" id="how"><span class="eyebrow">MADE FOR THE COMMUNITY</span><h2>Marketplace, made simple.</h2><div class="steps"><article><b>01</b><div class="step-icon">🔎</div><h3>Discover</h3><p>Find products offered by community sellers and check listing details.</p></article><article><b>02</b><div class="step-icon">💬</div><h3>Connect</h3><p>Message a seller to ask questions and confirm product availability.</p></article><article><b>03</b><div class="step-icon">🛒</div><h3>Checkout</h3><p>Review your cart, see the 2% platform fee, and place your order.</p></article></div></section>
+<section class="fee-banner"><div><span class="eyebrow">SIMPLE & TRANSPARENT</span><h2>A fair 1% + 1% split per sale.</h2><p>Buyers contribute 1% at checkout; sellers contribute 1% from their proceeds.</p></div><div class="fee-example"><small>Example sale</small><strong>₱1,000.00</strong><div><span>Buyer fee (1%)</span><b>₱10.00</b></div><div><span>Seller fee (1%)</span><b>₱10.00</b></div><div><span>Seller receives</span><b>₱990.00</b></div><div><span>UniBuddy earns</span><b>₱20.00</b></div></div></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">U</span> UniBuddy</a><span>Built for community commerce · Demo marketplace</span><span>© 2026 UniBuddy</span></footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop hidden" id="modalBackdrop"><section class="modal" role="dialog" aria-modal="true"><button class="close" id="closeModal" aria-label="Close">×</button><div id="modalContent"></div></section></div>
+<script src="app.js"></script>
+</body></html>

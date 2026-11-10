@@ -1,0 +1,4 @@
+project_id = "unibuddy-marketplace"
+
+[functions.create-checkout]
+verify_jwt = true
